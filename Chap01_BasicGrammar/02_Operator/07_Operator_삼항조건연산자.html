@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator : 삼항조건연산자</title>
+
+    <!-- 
+
+        [조건식 ? JavaScript Code(1) : JavaScript Code(2)]
+
+        - 조건식의 결과(true or false)에 따라 실행 결과가 달라짐
+        - 피연산자 3개 필요
+
+     -->
+
+    <script>
+        var a = 10;
+        var b = 3;
+
+        var result = a > b ? "ABC" : "abc";
+        /*
+        a=10, b=3으로 [a > b]의 결과는 true!
+        즉, "ABC"가 출력됨
+        만약 false라면 "abc"가 출력됐을 것!
+        */
+        document.write(result); // "ABC"
+    </script>
+
+</head>
+<body>
+</body>
+</html>

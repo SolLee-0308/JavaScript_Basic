@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator : 대입연산자 && 복합대입연산자</title>
+
+    <!--
+
+        1) 대입연산자 : 연산된 데이터를 변수에 저장할 때 사용
+        2) 복합대입연산자 : 산술연산자와 대입연산자가 복합적으로 적용 (+=, -+, *=, /=, %=)
+
+    -->
+
+    <script>
+        /* 1. 대입연산자 */
+        var num1 = 10;
+        var num2 = 3;
+
+        num1 += num2; // 13 // num1 = num1 + num2
+        num1 -= num2; // 10 // num1 = num1 - num2
+        num1 *= num2; // 30 // num1 = num1 * num2
+        num1 %= num2; // 0 // num1 = num1 % num2
+
+
+        /* 2. 복합대입연산자 : HTML 태그를 복합대입연산자를 이용하여 하나의 문자로 결합 */
+        var str = "<table border=1>";
+        str += "<tr>";
+        str += "<td>1</td><td>2</td><td>3</td>";
+        str += "</tr>";
+        str += "</table>";
+
+        document.write(str);
+    </script>
+
+</head>
+<body>
+</body>
+</html>

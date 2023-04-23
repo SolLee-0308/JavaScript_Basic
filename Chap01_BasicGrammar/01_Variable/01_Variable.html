@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable(변수)</title>
+    
+    <Script>
+        var box;
+        box = 100;
+        document.write(box);
+        /* result : 100 */
+        box = 30;
+        document.write(box);
+        /* result : 30 */
+        /* Top-down에 의해 기존에 저장된 100은 사라지고 결국 box=30 */
+
+
+        
+        /* 변수에 저장할 수 있는 자료형 (Data Type) : 문자형, 숫자형, 논리형 */
+        
+        // 1) 문자형
+        var js = "JavaScript";
+        var num1 = "100";
+        var tag = "<h1> String </h1>"; // HTML태그 인식
+        
+        // 2) 숫자형
+        var num2 = 100;
+        var num3 = Number("200"); // 문자형 타입 500을 숫자형 타입으로 변경
+        
+        // 3) 논리형(Boolean) : 0, null, undefined, " " = false
+        var boolean1 = Boolean(0); // false
+        var boolean2 = Boolean("Sol Lee"); // true
+        var boolean3; // undefined // false
+        var boolean4 = "First JavaScript";
+        boolean4 = null; // 변수에 저장된 데이터를 비우고자 할 때 사용
+        
+
+
+        /* typeof : 변수에 저장된 자료형을 알아냄 */
+        var num4 = 300;
+        var str = "Hello JavaScript";
+        document.write(typeof num4); // number
+        document.write(typeof, str); // string
+
+    </Script>
+
+</head>
+<body>
+</body>
+</html>
