@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문(Conditional Statement) : else문 + confirm()</title>
+
+    <script>
+        /* 1. 숫자 입력 받고 짝수인지 홀수인지에 대한 결과 출력 */
+        var favoriteNum = prompt("What's your favorite Number?", "");
+
+        if(favoriteNum % 2 == 0) {
+            document.write("It's an <i>EVEN NUMBER</i>.");
+        } else{
+            document.write("It's an <i>ODD NUMBER</i>.");
+        }
+
+
+        /* 2. confirm() && else 사용하여 결과 출력 */
+        var confirm = confirm("Are you sure you want to leave?");
+        // confirm()를 꼭 변수에 할당해주기
+
+        if(confirm) {
+            document.write("You've been withdrawn.");
+        } else{
+            document.write("You are NOT withdrawn.");
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
