@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문(RepeatedStatement) : for문</title>
+
+    <!--
+        : 조건식을 만족할 때까지 특정 코드를 반복하여 실행
+        : while문보다 사용하기 편해 사용빈도가 높음!
+    -->
+
+    <style>
+        .red {color: red;}
+        .green {color: green;}
+        .aqua {color: aqua;}
+    </style>
+
+    <script>
+        /*
+        for문의 조건식
+        : 1~100까지의 정수 중
+        1) 5의 배수 : red
+        2) 7의 배수 : green
+        3) 5의 배수이면서 7의 배수 : aqua
+        */
+
+        for(var i = 1 ; i<=100 ; i++ ) {
+            if(i%5 == 0 && i%7 != 0) {
+                document.write("<p class='red'>" + i + "</p>");
+            }else if(i%5 != 0 && i%7 == 0) {
+                document.write("<p class='green'>" + i + "</p>");
+            }else if(i%5 == 0 && i%7 == 0){
+                document.write("<p class='aqua'>" + i + "</p>");
+            }
+        }
+    </script>
+
+</head>
+<body>
+</body>
+</html>
