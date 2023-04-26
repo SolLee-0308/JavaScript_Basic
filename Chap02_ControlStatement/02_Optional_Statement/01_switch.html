@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문(Optional Statement) : switch문</title>
+    /*
+    : 여러 경우의 값 중 일치하는 데이터를 찾아 그에 해당하는 코드를 실행시킬 때 사용
+    */
+
+    <script>
+        /* 1. 창을 통해 포털 검색 사이트 이름을 입력 받고입력한 이름에 해당하는 사이트로 이동 */
+        
+        // 변수 site에 저장된(입력된) 값은 switch문을 만나면 case의 값을 하나씩 검사
+        // 일치하는 데이터가 있으면 그에 해당하는 코드 실행
+        // break문을 만나면 switch문 종료
+        // 만일 case(경우)의 값 중 일치하는 데이터가 없으면 마지막 default에 있는 코드 실행 & switch 종료
+
+        var site = prompt("[네이버, 다음, 구글] 중 자주 찾는 포털 검색 사이트를 써주세요.");
+        var url;
+
+        switch(site) {
+            case "네이버" : url = "www.naver.com";
+            break;
+            case "다음" : url = "www.daum.net";
+            break;
+            case "구글" : url = "www.google.com";
+            break;
+            default : alert("보기 중에 없는 사이트입니다. 다시 입력해주세요.");
+            location.reload();
+        }
+
+        // url에 입력된 값이 있으면 [location.href]의 값이 바뀌어 해당 포털 사이트로 이동!
+        // 풀이 : 만약 url이 참이면(위에 입력된 url값이 있으면) 해당 url로 이동
+        if(url) location.href = "http://" + url;
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
