@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문(RepeatedStatement) : do while문</title>
+
+    <!-- while문 : 조건식의 만족 여부를 먼저 검사하고 {중괄호}의 코드 실행여부 결정 -->
+    <!-- do while문 : [반드시] 1번은 코드를 실행하고 조건식 검사 -->
+
+    <script>
+        var i = 10; // var 변수 = 초깃값
+        do{
+            document.write("HELLO!!"); // 자바스크립트 코드;
+            i++; // 증감식;
+        }while(i<3) // 조건식
+
+        // {중괄호} 자바스크립트 코드인 document.write("HELLO!!");를 먼저 실행
+        // 그리고 조건식 [i<3]을 검사
+        // 변수 i에는 10이 저장된 상태이므로 [10<3=false]
+        // false가 나왔으므로 while문 종료!
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>

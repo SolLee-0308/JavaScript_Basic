@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문(RepeatedStatement) : while문</title>
+    <!--  -->
+    <script>
+        /* 1. while문의 조건식 : Hello 10번 반복 */
+        var i = 1; // 변수 선언 && 초기값 선언
+        while(i<11) { // 조건식
+            document.write("Hello" + i + "<br>"); // 자바스크립트 코드
+            i++; // 증감식
+        }
+        
+        /* 2. while문의 조건식 : 30이하의 정수 중 2의 배수이면서 6의 배수 출력 */
+        var j = 1;
+        while(j<31) {
+            if(j%2 == 0 && j%6 == 0){
+                document.write("2와 6의 배수 출력 : " + j + "<br>");
+            }
+            j++;
+        }
+        
+        /* 3. while문의 조건식 : 10~20 사이의 정수 중 짝수는 blue, 홀수는 red로 출력 */
+        var n = 10;
+        while(n<=20) {
+            if(n%2 == 0) {
+                document.write("<p class=blue>" + n + "</p>");
+            }else{
+                document.write("<p class=red>" + n + "</p>");
+            }
+            n++;
+        }      
+    </script>
+    <style>
+        .blue {color:blue;}
+        .red {color: red;}
+    </style>
+
+</head>
+<body>
+</body>
+</html>
