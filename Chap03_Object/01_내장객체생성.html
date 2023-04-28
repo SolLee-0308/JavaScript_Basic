@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object : 내장 객체 생성</title>
+
+    <!-- 참조 변수(instance name) = new 생성 함수 -->
+
+    <script>
+        var tv = new Object();
+
+        tv.color = "white";
+        tv.price = "3,000,000";
+
+        tv.info = function(){
+            document.write("TV Color : " + tv.color + "<br>");
+            document.write("TV Price : " + this.price + "원");
+        }
+
+        document.write("<h1>tv 객체 method 호출!</h1>")
+        tv.info();
+
+
+        var car = {
+            color: "pink", price: "130,000,000",
+
+            info:function(){
+                document.write("Car Color : " + car.color + "<br>");
+                document.write("Car Price : " + this.price + "원");
+            }
+        }
+
+        document.write("<h1>car 객체 method 호출!</h1>")
+        car.info();
+    </script>
+</head>
+<body>
+</body>
+</html>
