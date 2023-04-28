@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object : Array 객체 & 배열값 가져오는 방식</title>
+    <!--  변수 : 데이터 1개를 1개 저장소에 저장! -->
+    <!-- Array 객체 : 다수의 데이터를 1개 저장소에 저장! -->
+    <!-- 
+        배열 객체 생성
+        방식 1. var 참조변수 = new Array();
+           참조변수[0] = 값1;
+           참조변수[1] = 값2;
+           참조변수[2] = 값3;
+        
+        방식 2. var 참조변수 = new Array(값1, 값2, 값3, ...);
+
+        방식 3. var 참조변수 = [값1, 값2, 값3, ...];
+
+     -->
+     <script>
+        /* 배열 객체 생성 방식 1 */
+        var reference1 = new Array();
+        reference1[0] = "Hello!";
+        reference1[1] = "I am ";
+        reference1[2] = "SOL.";
+        reference1[3] = 29;
+        reference1[4] = true;
+        
+
+        /* 배열 객체 생성 방식 2 */
+        var reference2 = new Array("Hello!", "I am", "SOL.", 29, true);
+        
+
+        /* 배열 객체 생성 방식 3 */
+        var reference3 = ["Hello!", "I am", "SOL.", 29, true];
+        // 배열값 가져오는 방식 1)
+        document.write(reference3[0], " ");
+        document.write(reference3[1], " ");
+        document.write(reference3[2], " ");
+        document.write(reference3[1], " ");
+        document.write(reference3[3], ".<br>");
+        document.write(reference3[4], "<br><br><br>");
+        // 배열값 가져오는 방식 2)
+        for(var i=0 ; i<reference3.length ; i++){
+            document.write(reference3[i] + "<br>");
+        }
+
+     </script>
+
+</head>
+<body>
+    
+</body>
+</html>
