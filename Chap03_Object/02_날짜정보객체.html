@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object : 날짜 정보</title>
+
+    <script>
+        /*
+            날짜 정보를 제공하는 Date Object
+            참조 변수 = new Date();
+        */
+
+        var today = new Date(); // Date Object 생성
+
+        /* GET : 날짜 정보를 가져올 때 */
+        document.write("연도 정보 : " + today.getFullYear() + "년<br>"); // 연도 정보 
+        document.write("월 정보 : " + today.getMonth() + "월 (현재 월 -1)<br>"); // 월 정보 (현재 월 - 1)
+        document.write("일 정보 : " + today.getDate() + "일<br>"); // 일 정보
+        document.write("요일 정보 : " + today.getDay() + "요일<br>"); // 요일 정보
+        document.write("시 정보 : " + today.getHours() + "시<br>"); // 시 정보
+        document.write("분 정보 : " + today.getMinutes() + "분<br>"); // 분 정보
+        document.write("초 정보 : " + today.getSeconds() + "초<br>"); // 초 정보
+        document.write("밀리세컨 정보 : " + today.getMilliseconds() + "<br>"); // 밀리세컨 정보
+        document.write("1970년 1월 1일부터 경과된 시간을 밀리초로 표기 : " + today.getTime() + "<br>");
+        // 1970년 1월 1일부터 경과된 시간을 밀리초로 표기
+        document.write("GMT 표준 표기 방식 : " + today.toGMTString() + "<br>");
+        // GMT 표준 표기 방식으로 문자형 데이트로 반환
+        
+        
+
+        /* POST : 날짜 정보를 수정할 때 */
+        setFullYear(); // 연도 정보 수정
+        setMonth(); // 월 정보 수정
+        setDate(); // 일 정보 수정
+        // 요일은 날짜를 바꾸면 자동으로 바뀌므로 없음!!
+        setHours(); // 시 정보 수정
+        setMinutes(); // 분 정보 수정
+        setSeconds(); // 초 정보 수정
+        setMilliseconds(); // 밀리초 정보 수정
+        setTime(); // 1970년 1월 1일부터 경과된 시간을 밀리초로 수정
+        toLocaleString(); // 운영 시스템 표기 방식으로 문자형 데이터로 반환
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
