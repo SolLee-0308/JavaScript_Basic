@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object : 날짜 정보</title>
+    <style>
+        h1 {color: royalblue;}
+    </style>
+
+    <script>
+
+        /* 1. 오늘 날짜에 대한 정보 구하기 */
+        var today = new Date();
+        document.write("<h1>Today's Date Information</h1>");
+        document.write("<h2> Current Month : " + today.getMonth() + "</h2>");
+        document.write("<h2> Current Date : " + today.getDate() + "</h2>");
+        document.write("<h2> Current Day : " + today.getDay() + "</h2><br><br><br>");
+        
+
+        /* 2. 내 생년월일에 대한 정보 구하기 */
+        var birthday = new Date(1994,03,08);  
+        document.write("<h1>Information about the date I was born</h1>");
+        document.write("<h2> The year I was born : " + birthday.getFullYear() + "</h2>");
+        document.write("<h2> The year I was born : " + birthday.getMonth() + "</h2>");
+        document.write("<h2> The year I was born : " + birthday.getDate() + "</h2>");
+        
+    </script>
+
+</head>
+<body>
+</body>
+</html>
