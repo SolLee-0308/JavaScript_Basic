@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object : Array 객체의 Method</title>
+    <!-- 
+        * Array 객체의 Method 및 속성 *
+
+        1. join(연결 문자)
+        2. reverse()
+        3. sort()
+        4. slice(index1, index2)
+        5. splice()
+        6. concat()
+        7. pop()
+        8. push(new data)
+        9. shift()
+        10. unshift(new data)
+        11. length
+    -->
+    <script>
+        var arr1 = ["신당", "신금호", "왕십리", "약수"];
+        var arr2 = ["한강진", "녹사평", "행당"];
+        var result;
+
+        // 1. join(연결 문자)
+        result = arr1.join("-");
+        console.log("join(연결 문자) : " + result); // result : 신당-신금호-왕십리-약수
+
+
+        // 2. reverse() : 배열 객체의 데이터 순서를 거꾸로 바꾼 후 반환
+        result = arr2.reverse();
+        console.log("reverse() : " + result);
+
+
+        // 3. sort() : 배열 객체의 데이터를 오름차순으로 정렬
+        result = arr1.sort();
+        console.log("sort() : " + result);
+        
+        
+        // 4. slice(index1, index2) : 배열 객체의 데이터 중 원하는 인덱스 구간만큼 잘라서 반환
+        result = arr1.slice(0,1);
+        console.log("slice(index1, index2) : " + result);
+        
+
+        // 5. splice() : 배열 객체의 지정 데이터를 삭제하고 -> 그 구간에 새 데이터 삽입 가능
+        arr2.splice(2,1,"합정","홍대입구");
+        console.log("splice() : " + arr2);
+
+
+        // 6. concat() : 배열 1개 + 배열 1개
+        result = arr2.concat(arr1);
+        console.log("concat() : " + result);
+
+
+        // 7. pop() : 마지막 인덱스에 저장된 데이터 삭제
+        arr1.pop();
+        console.log("pop() : " + arr1);
+
+
+        // 8. push(new data) : 마지막 인덱스에 새 데이터 삽입
+        arr1.push("금강산");
+        console.log(arr1);
+        
+        
+        // 9. shift() : 첫번째 인덱스에 저장된 데이터 삭제
+        arr2.shift();
+        console.log(arr2);
+
+
+        // 10. unshift(new data) : 가장 앞의 인덱스에 새 데이터 삽입
+        arr1.unshift("지하철");
+        console.log(arr1);
+
+
+        // 11. length : 배열에 저장된 총 데이터의 개수 반환
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
